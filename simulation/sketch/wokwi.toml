@@ -1,0 +1,12 @@
+# For the Wokwi VS Code extension (not needed on wokwi.com).
+# Build the sketch first (Arduino IDE: Sketch > Export Compiled Binary, or arduino-cli),
+# then point these at the output. The forward lets your PC browser reach the simulated web server.
+[wokwi]
+version = 1
+firmware = "build/esp32.esp32.esp32s3/sketch.ino.bin"
+elf = "build/esp32.esp32.esp32s3/sketch.ino.elf"
+
+# Open http://localhost:8180 on your PC → the bot's phone page running inside the simulator
+[[net.forward]]
+from = "localhost:8180"
+to = "target:80"

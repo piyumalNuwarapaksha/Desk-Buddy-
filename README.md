@@ -67,3 +67,12 @@ The objective of Desk Buddy Bot is to develop a compact embedded desktop compani
 ---
 
 **Desk Buddy Bot** is an embedded systems project exploring the integration of hardware peripherals, real-time input handling, and interactive output in a compact desktop companion.
+
+## 📁 Repository Structure
+
+> ⚠️ Work in progress — these are early simulations and are not finalized yet.
+
+| Folder | Contents |
+|---|---|
+| [`simulation/`](simulation/) | Wokwi simulation of the bot: firmware sketch (`sketch.ino`, `face.h`, `web_ui.h`), circuit (`diagram.json`), libraries and `wokwi.toml`. See its README for how to run it. |
+| [`web-interface/`](web-interface/) | The phone control page served by the bot over WiFi (standalone `index.html`). |
